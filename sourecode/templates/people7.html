@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstarp介绍</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+  rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',
+  filename='style/style.css') }}" />
+	
+</head>
+<body style="padding-top: 50px">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">
+				品牌
+			</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li><a href="/guitarist"><span class="glyphicon glyphicon-user"></span> Guitarist</a></li>
+			<li><a href="/picture"><span class="glyphicon glyphicon-picture"></span> Picture</a></li>
+			<li><a href="/introduction"><span class="glyphicon glyphicon-list-alt"></span> Introduction</a></li>		</ul>
+		</div>
+	</div>
+</nav>
+
+
+
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <img src="/static/img/people7.jpg" style="height: 100%; width: 100%; padding: 160px 0">
+            </div>
+            <div class="col-md-8 abc" style="padding: 150px 0 0 50px">
+                
+                <h3 style="font-size: 25px">Chuck Berry (1926)</h3>
+                <p style="font-size: 20px">
+                	Chuck Berry is a guitarist, singer, and songwriter, and one of the pioneers of rock and roll music. With songs such as “Maybellene” (1955), “Roll Over Beethoven” (1956), “Rock and Roll Music” (1957) and “Johnny B. Goode” (1958), Chuck Berry refined and developed rhythm and blues into the major elements that made rock and roll distinctive, with lyrics focusing on teen life and consumerism and utilizing guitar solos and showmanship that would be a major influence on subsequent rock music.
+                </p>
+                <p style="font-size: 20px">
+                    Berry was among the first musicians to be inducted into the Rock and Roll Hall of Fame on its opening in 1986, with the comment that he “laid the groundwork for not only a rock and roll sound but a rock and roll stance.” Berry is included in several Rolling Stone “Greatest of All Time” lists, including being ranked fifth on their 2004 list of the 100 Greatest Artists of All Time.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+	
+
+
+
+
+
+
+
+
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+
+</body>
+</html>

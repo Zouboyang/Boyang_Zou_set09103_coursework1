@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guitar</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+  rel="stylesheet" />
+        	<link rel="stylesheet" type="text/css" href="{{ url_for('static',
+  filename='style/style.css') }}" />
+</head>
+<body style="padding-top: 50px">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand"><img src="#" styl="width: 150px; height: 50px; padding: 0 0 20px 0; margin: 10px">
+		
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+		<ul class="nav navbar-nav navbar-left">
+			<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li><a href="/guitarist"><span class="glyphicon glyphicon-user"></span> Guitarist</a></li>
+			<li><a href="/picture"><span class="glyphicon glyphicon-picture"></span> Picture</a></li>
+			<li><a href="/introduction"><span class="glyphicon glyphicon-list-alt"></span> Introduction</a></li>
+		</ul>
+                 <ul class="nav navbar-nav navbar-right">
+			<li><a href="/login"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                          {% if username %}
+                              <li><a herf="#"><span>Welcome {{ username }}</span></a></li>
+                                                 {% endif %}
+		</ul>
+
+		</div>
+	</div>
+</nav>
+{% block content %}
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner" align="center">
+		
+		<div class="item active">
+			<img src="static/img/slide2.jpg" width="1640px" height="640px" alt="slide2">
+		</div>
+
+		<div class="item">
+			<img src="static/img/slide1.jpg" width="1680px" height="640px" alt="slide1">
+		</div>
+		
+		<div class="item">
+			<img src="static/img/slide3.jpg" width="2080px" height="640px" alt="slide3">
+		</div>
+		
+		<div class="tab">
+			<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+				<span class="glyphicon glyphicon-chevron-left"></span>	
+			</a>
+			
+			<a href="#myCarousel" data-slide="next" class="carousel-control right">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
+</div>
+
+	<div class="tab1">
+		<div class="container">
+			<h2 class="tab-h2">What are the differences between the acoustic, classical and electric guitar?</h2>
+			<div class="row">
+				<div class="col-md-6 col">
+					<div class="media-left">
+						<a href="#" class="img1"><img src="static/img/Guitar1.png" height="150px" width="150px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Body of the Guitar</h4>
+						<p class="text-muted">In the terms of appearance the classic and acoustic guitars always have a round hole in their body but the electrical guitar doesn’t. The classic and the acoustic guitars are bulkier than the electrical guitars, but it is hollow and lighter.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col">
+					<div class="media-left">
+						<a href="#" class="img1"><img src="static/img/Guitar2.png" height="150px" width="150px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Fret board</h4>
+						<p class="text-muted">The fret board of the acoustic and electric guitar are narrower than the classic guitar. And also most often the classic guitar doesn’t have a dot fret markers as like the acoustic and electric ones</p>
+					</div>
+				</div>
+				<div class="col-md-6 col">
+					<div class="media-left">
+						<a href="#" class="img1"><img src="static/img/Guitar3.png" height="150px" width="150px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Head stock</h4>
+						<p class="text-muted">The head stock of the classic guitar looks very different form the acoustic and electric guitar. There are hollows in the headstock of the classic guitar and most of them are looking same. But the acoustic and electric guitar head stocks are available in different designs.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col">
+					<div class="media-left">
+						<a href="#" class="img1"><img src="static/img/Guitar4.png" height="150px" width="150px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">Strings</h4>
+						<p class="text-muted">Classic guitars generally use Nylon strings, where as the acoustic and electric guitar use the steel strings. The nylon strings are thicker and have a mellow and rounded sound. The strings of the electric guitar are much softer than the acoustic guitar and can be easily pressed.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="tab2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Acoustic, Classical Guitar</h3>
+				<p>The classical guitar (also known as concert guitar, classical acoustic, nylon-string guitar, or Spanish guitar) is the member of the guitar family used in classical music. It is an acoustical wooden guitar with strings made of nylon, rather than the metal strings used in acoustic and electric guitars. The traditional classical guitar has twelve frets clear of the body and is held on the left leg, so that the hand that plucks or strums the strings does so near the back of the soundhole (this is called the classical position). The modern steel string guitar, on the other hand, usually has fourteen frets clear of the body (see Dreadnought) and is commonly played off the hip.</p>
+			</div>
+			<div class="col-md-6">
+				<img src="static/img/Acoustic_Guitar.png" class="img-responsive center-block" width="50%" height="50%">
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="tab3">
+	<div class="container">
+		<div class="row">			
+			<div class="col-md-6">
+				<img src="static/img/Electric_Guitar.png" class="img-responsive center-block" width="50%" height="50%">
+			</div>
+			<div class="col-md-6">
+				<h3>Electric Guitar</h3>
+				<p>An electric guitar is a fretted stringed instrument with a neck and body that uses a pickup to convert the vibration of its strings into electrical signals. The vibration occurs when a guitarist strums, plucks, fingerpicks, or taps the strings. It is sensed by a pickup, most commonly by a magnetic pickup that uses the principle of direct electromagnetic induction. The signal generated by an electric guitar is too weak to drive a loudspeaker, so it is plugged into a guitar amplifier before being sent to a loudspeaker, which makes a sound loud enough to hear. The output of an electric guitar is an electric signal, and the signal can easily be altered by electronic circuits to add "color" to the sound or change the sound. Often the signal is modified using effects such as reverb and distortion and "overdrive", with the growling sound of the latter being a key element of the sound of the electric guitar as it is used in blues and rock music.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<footer id="footer">
+	<div class="container">
+		<a herf="#">302654447@qq.com</a>
+		<p>13973007688</p>
+	</div>
+</footer>
+
+
+{% endblock %}
+
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
